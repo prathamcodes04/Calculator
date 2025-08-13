@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="calculator">
+        <div id="display-conatiner">
+            <div id="history"></div>
+            <input id="display" readonly>
+        </div>
+        <div id="keys">
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('/')" class="operator-btn"><i class="fas fa-divide"></i></button>
+            
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('*')" class="operator-btn"><i class="fas fa-times"></i></button>
+            
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('-')" class="operator-btn"><i class="fas fa-minus"></i></button>
+            
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="calculate()" class="equals-btn"><i class="fas fa-equals"></i></button>
+            <button onclick="appendToDisplay('+')" class="operator-btn"><i class="fas fa-plus"></i></button>
+            
+            <button onclick="clearDisplay()" class="function-btn"><i class="fas fa-c"></i></button>
+            <button onclick="deleteLastChar()" class="function-btn"><i class="fas fa-backspace"></i></button>
+            <button onclick="toggleSign()" class="function-btn">±</button>
+            <button onclick="calculatePercentage()" class="function-btn">%</button>
+        </div>
+    </div>
+        </div>
+    </div>
+
+    <footer>
+    <p>© 2025 Currency Converter. All rights reserved.</p>
+    <p>Made with ❤️ by Pratham</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
